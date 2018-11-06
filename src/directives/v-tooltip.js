@@ -188,6 +188,8 @@ export function destroyTooltip (el) {
 }
 
 export function bind (el, { value, oldValue, modifiers }) {
+	console.log(getContent);
+
 	const content = getContent(value)
 	if (!content || !state.enabled) {
 		destroyTooltip(el)
