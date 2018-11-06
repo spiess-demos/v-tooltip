@@ -145,6 +145,8 @@ export function getContent (value) {
 		return value
 	} else if (value && type === 'object') {
 		return value.content
+	} else if (value && type === 'function') {
+		return value.content()
 	} else {
 		return false
 	}
